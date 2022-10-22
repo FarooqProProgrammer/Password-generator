@@ -1,0 +1,24 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "this will generate password",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FarooqProProgrammer/Password-generator.git"
+  },
+  "keywords": [
+    "password",
+    "password",
+    "generatore"
+  ],
+  "author": "farooqpro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FarooqProProgrammer/Password-generator/issues"
+  },
+  "homepage": "https://github.com/FarooqProProgrammer/Password-generator#readme"
+}
