@@ -1,0 +1,10 @@
+#password-generator {
+    text-align: center;
+  }
+  
+  #password-generator input[type="text"] {
+    width: 100%;
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+  
