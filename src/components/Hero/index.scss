@@ -1,0 +1,22 @@
+.PasswordHeroBox{
+    @apply w-full h-[89vh] bg-black flex flex-col justify-center items-center gap-5;
+    .PassWordGenerate {
+        width: 50%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @apply  bg-white rounded-md px-3 py-2;
+    }
+    .PasswordChoices {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        @apply place-items-center gap-3;
+    }
+
+    @media (max-width:1000px) {
+        .PassWordGenerate {
+            width: 90%;
+        }
+    }
+}
