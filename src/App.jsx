@@ -10,8 +10,9 @@ import SingleBlog from './pages/SingleBlog'
 export default function App() {
   return (
     <>
-        <Header />
+        
         <BrowserRouter>
+        <Header />
           <Routes>
             <Route path='/' Component={Home} />
             <Route path='/pricing' Component={Pricing} />

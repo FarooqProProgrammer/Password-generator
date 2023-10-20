@@ -5,10 +5,13 @@ import { BsChevronDown } from "react-icons/bs"
 import { useMediaQuery } from 'react-responsive'
 import { AiOutlineMenu } from "react-icons/ai"
 import { ImCross } from "react-icons/im"
+import { useNavigate } from 'react-router-dom'
 
 export default function Header() {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 990px)' })
     const [isNavOpen,setIsNavOpen] = useState(false);
+    const navigate = useNavigate();
+
 
 
     return (
@@ -18,8 +21,8 @@ export default function Header() {
 
                 {
                     !isTabletOrMobile && <Box display={'flex'} justifyContent={'center'} alignItems={'center'} gap={4}>
-                        <Text color={'white'} fontSize={{ 'lg': 22, 'md': 21, 'sm': 19 }} _hover={{ color: '#f7f7f7', cursor: 'pointer' }} >Personal</Text>
-                        <Text color={'white'} fontSize={{ 'lg': 22, 'md': 21, 'sm': 19 }} _hover={{ color: '#f7f7f7', cursor: 'pointer' }} >Pricing</Text>
+                        <Text  color={'white'} fontSize={{ 'lg': 22, 'md': 21, 'sm': 19 }} _hover={{ color: '#f7f7f7', cursor: 'pointer' }} >Personal</Text>
+                        <Text onClick={()=>navigate('/pricing')} color={'white'} fontSize={{ 'lg': 22, 'md': 21, 'sm': 19 }} _hover={{ color: '#f7f7f7', cursor: 'pointer' }} >Pricing</Text>
                         <Text color={'white'} fontSize={{ 'lg': 22, 'md': 21, 'sm': 19 }} _hover={{ color: '#f7f7f7', cursor: 'pointer' }} >Business</Text>
                         <Menu>
                             <MenuButton as={Button} rightIcon={<BsChevronDown />}>
